@@ -1,0 +1,45 @@
+.article {
+    width: 38.9rem;
+    height: 38.7rem;
+    box-shadow: 0 0.3rem 0.6rem rgba($color: #000000, $alpha: 0.2);
+    overflow: hidden;
+    position: relative;
+
+    @include mq(mb) {
+        width: 32rem;
+    }
+
+    &:not(:last-child) {
+        margin-right: 3rem;
+
+        @include mq(ip) {
+            margin-right: 0;
+            margin-bottom: 3rem;
+        }
+    }
+
+    
+
+    &__img {
+        width: 100%;
+
+    }
+
+    &__sentence {
+        font-size: 1.8rem;
+        padding: 1.9rem 1.8rem 1.8rem;
+        text-align: left;
+    }
+
+
+    &__time {
+        color: #444444;
+        position: absolute;
+        right: 10%;
+        bottom: 3%;
+    }
+
+
+
+
+}

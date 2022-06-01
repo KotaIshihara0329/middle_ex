@@ -1,0 +1,95 @@
+.price {
+    background-color: $color-back--2;
+    text-align: center;
+
+    padding-top: 6.4rem;
+
+
+    &__price {
+        color: $color-letter--1;
+        margin-bottom: 7.1rem;
+    }
+
+    &__table {
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #E5E5E5;
+        border-collapse: collapse;
+        margin-bottom: 4.1rem;
+        box-shadow: 0 0.3rem 0.6rem rgba($color: #000000, $alpha: 0.15);
+       
+
+        th {
+            width: 30%;
+            padding-top: 4rem;
+            padding-bottom: 3.55rem;
+            border: 1px solid #E5E5E5;
+            text-align: left;
+            padding-left: 1.9rem;
+
+            @include mq(pc) {
+                width: 40%;
+            }
+
+            @include mq(ip) {
+                width: 60%;
+                font-size: 1.3rem;
+                
+            }
+            @include mq(mb) {
+                width: 70%;
+                padding-top: 2rem;
+                padding-bottom: 1.55rem;
+                font-size: 1.2rem;
+      
+                
+            }
+
+
+
+        }
+
+        td {
+            width: 70%;
+            text-align: left;
+            padding-top: 4rem;
+            padding-bottom: 3.55rem;
+            border: 1px solid #E5E5E5;
+            padding-left: 3.05rem;
+
+            @include mq(pc) {
+                width: 60%;
+            }
+
+            @include mq(ip) {
+                width: 40%;
+                font-size: 1.3rem;
+            }
+            @include mq(mb) {
+                width: 30%;
+                padding-top: 2rem;
+                padding-bottom: 1.55rem;
+                font-size: 1.2rem;
+                padding-left: 1.05rem;
+
+            }
+            
+        }
+
+
+    }
+
+    &__detail {
+        padding-bottom: 7.1rem;
+
+
+        @include mq(ip) {
+            font-size: 1.4rem;
+        }
+
+
+    }
+
+
+
+}

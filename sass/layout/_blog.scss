@@ -1,0 +1,26 @@
+.blog {
+    background-color: $color-back--2;
+    text-align: center;
+    padding: 6.4rem 2rem 9.1rem;
+
+   
+
+    &__blog {
+        text-transform: uppercase;
+        color: $color-letter--1;
+        padding-bottom: 5.5rem;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        @include mq(ip) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+}

@@ -1,0 +1,82 @@
+.hero {
+    height: 76.8rem;
+    background: url(../img/circle.svg) no-repeat;
+    background-position: 110% -85%;
+    padding-top: 7.4rem;
+
+    @include mq(ip) {
+        background-position: 50%;
+    }
+
+
+    &__container {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+
+
+
+        @include mq(ip) {
+            flex-direction: column;
+            
+        }
+    }
+
+
+
+    &__left {
+        width: 35.5rem;
+        
+        @include mq(ip) {
+            text-align: center;
+        }
+
+
+    }
+
+
+    &__p {
+        width: 25.5rem;
+        margin-bottom: 3.9rem;
+      
+        @include mq(ip) {
+            margin: 0 auto 3.9rem;
+        }
+
+        
+        
+
+    }
+
+    &__picture {
+        transform: translateY(2rem);
+
+        
+
+    }
+
+    &__img {
+        width: 51.8rem;
+
+        @include mq(ip) {
+            width: 100%;
+        }
+
+
+
+    }
+
+    &__btn {
+        @include mq(ip) {
+            margin-bottom: 5rem;
+        }
+
+    }
+
+
+
+
+
+
+}

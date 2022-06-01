@@ -1,0 +1,26 @@
+.works {
+    text-align: center;
+    padding-top: 6.4rem;
+    padding-bottom: 9rem;
+    &__works {
+        text-transform: uppercase;
+        color: $color-letter--1;
+        margin-bottom: 6.9rem;
+        
+    }
+    &__box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+
+    }
+    
+
+
+
+}
+
+.swiper {
+    margin: 0;
+}

@@ -1,0 +1,77 @@
+.faq {
+    text-align: center;
+    padding-top: 6.4rem;
+    padding-bottom: 8.6rem;
+
+    &__faq {
+        text-transform: uppercase;
+        color: $color-letter--1;
+        margin-bottom: 3.3rem;
+    }
+
+    &__table {
+       font-size: 1.4rem;
+       width: 100%;
+       border-collapse: collapse;
+    }
+
+    &__question {
+        border: 1px solid #E5E5E5;
+        padding: 2.2rem 0;
+        cursor: pointer;
+
+        @include mq(ip) {
+            font-size: 1.3rem;
+        }
+        @include mq(mb) {
+            font-size: 1.1rem;
+        }
+
+
+    }
+
+    &__answer {
+        border: 1px solid #E5E5E5;  
+        text-align: left;
+        background-color: #F2F2F2;
+        line-height: 1.85;
+        letter-spacing: 0.7px;
+        padding: 2.8rem 3.5rem 2.8rem;
+
+        @include mq(ip) {
+            font-size: 1.3rem;
+        }
+        @include mq(mb) {
+            font-size: 1.1rem;
+        }
+
+
+        &--1 {
+            
+
+            @include mq(ip) {
+                padding: 2.8rem 2.5rem 2.8rem;
+            }
+    
+            
+        }
+        &--2 {
+            display: none;
+
+            @include mq(ip) {
+                padding: 2.8rem 2.5rem 2.8rem;
+            }
+        }
+        &--3 {
+            display: none;
+            padding: 2.8rem 9.5rem 2.8rem  3.5rem;
+            
+            @include mq(ip) {
+                padding: 2.8rem 2.5rem 2.8rem;
+            }
+        }
+    }
+
+
+
+}

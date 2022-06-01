@@ -1,0 +1,159 @@
+.header {
+    background-color: $color-back--1;
+    box-shadow: 0 0.3rem 0.6rem rgba($color: #000000, $alpha: 0.25);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+   
+    &__container {
+        display: flex;
+        flex-direction: row;
+        height: 9.4rem;
+        align-items: center;
+
+    }
+
+    &__left {
+        flex-basis: 40%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        
+
+        @include mq(ip) {
+            flex-basis: 80%;
+        }
+
+    }
+
+    &__img {
+        width: 4.7rem;
+        height: 4.7rem;
+
+    }
+
+    &__name {
+        font-size: 2.4rem;
+        margin-left: 1.6rem;
+
+    }
+
+
+
+
+    &__right {
+        flex-basis: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mq(ip) {
+            background-color: white;
+            position: fixed;
+            top: 50%;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 3rem;
+            display: none;
+
+          
+
+        }
+
+    }
+
+    &__ul {
+        display: flex;
+
+        @include mq(ip) {
+            flex-direction: column;
+            text-align: center;
+            
+        }
+
+    }
+
+    &__li {
+        &:not(:last-child) {
+            margin-right: 4.6rem;
+
+            @include mq(ip) {
+                margin-right: 0;
+                margin-bottom: 3rem;
+            }
+        }
+
+        
+    }
+
+  
+    
+
+
+}
+
+#white {
+    color: #fff;
+    line-height: 1;
+}
+
+.navArea {
+    
+    position: fixed;
+    background-color: #fff;
+    color: #333;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    right: -500rem;
+    bottom: 0;
+    z-index: 50;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s;
+
+    ul {
+        @include absCenter;
+    }
+    
+
+    li {
+        font-size: 3rem;
+        transition: all 0.2s 0.2s;
+        &:nth-child(2) {
+            margin: 5rem;
+        }
+    }
+}
+
+#mask {
+    display: none;
+    transition: all 0.5s;
+
+}
+
+.open #mask {
+    display: block;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0.6;
+}
+
+.open nav {
+    right: 0;
+    opacity: 1;
+
+}
+
