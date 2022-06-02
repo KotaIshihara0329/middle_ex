@@ -4,6 +4,12 @@ let mask = document.querySelector("#mask");
 
 btn.onclick = () => {
     nav.classList.toggle("open");
+
+    // HEllo!! Ivan!! Here!
+    // After btn.clicked, #navArea will come open and the screen become white, but after c
+    // lick the 特徴 or 価格　or 問い合わせ, I want this white backgroud close. But I don't know...
+    
+    
 };
 
 mask.onclick = () => {
@@ -17,9 +23,9 @@ let contact = document.querySelector('#contact')
 
 
 
+
 $(function(){
 
-    
     $('a[href^="#"]').click(function(){
         // 移動先を50px上にずらす
         var adjust = 94;
@@ -82,12 +88,11 @@ $(function(){
 // Swiper JS
 const swiper = new Swiper('.swiper', {
     loop: true,
-    loopAdditionalSlides: 5,
     grabCursor: true,
     direction: 'horizontal',
-    centeredSlides: true,
     slidesPerView: 1.3,
-    spaceBetween: 25,
+    spaceBetween: 30,
+    centeredSlides: true,
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
@@ -95,10 +100,15 @@ const swiper = new Swiper('.swiper', {
     speed: 2000,
     effect: "slide",
     touchStartPreventDefault: false,
-    passiveListeners: false,
+    passiveListeners: true,
     breakpoints: {
-        800: {
-            slidesPerView: 3,
+        600: {
+            slidesPerView: 2.5,
+            spaceBetween: 36
+        },
+
+        1000: {
+            slidesPerView: 3.7,
             spaceBetween: 56
         }
     },

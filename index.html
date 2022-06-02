@@ -11,7 +11,10 @@
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://middlex.netlify.app/" />
-    <meta property="og:image" content="https://lh5.googleusercontent.com/_SvUQys4ot6-96hRZ3Z04vwgtHf1MIZ1vw0-eZguqzF-Eh-c9NgH4XeX3gveTkaani2HYjvOy8-bJ4lle2uHB2A4U8KuylXoAJ52hTZOnTjf_r8FJfV-twCfHcD34SNc=w1280" />
+    <meta
+      property="og:image"
+      content="https://lh5.googleusercontent.com/_SvUQys4ot6-96hRZ3Z04vwgtHf1MIZ1vw0-eZguqzF-Eh-c9NgH4XeX3gveTkaani2HYjvOy8-bJ4lle2uHB2A4U8KuylXoAJ52hTZOnTjf_r8FJfV-twCfHcD34SNc=w1280"
+    />
     <meta name="robots" content="noindex" />
     <title>ユアコーディング</title>
     <link
@@ -38,9 +41,9 @@
       <div id="mask"></div>
       <nav class="navArea">
         <ul>
-          <li><a href="#">特徴</a></li>
-          <li><a href="#">価格</a></li>
-          <li><a href="#contact">お問い合わせ</a></li>
+          <li><a href="#main">特徴</a></li>
+          <li><a href="#price">価格</a></li>
+          <li><a href="#contactbutton">お問い合わせ</a></li>
         </ul>
       </nav>
     </div>
@@ -58,13 +61,15 @@
         </a>
         <nav class="header__right" id="global_nav">
           <ul class="header__ul">
-            <li class="header__li"><a href="#">特徴</a></li>
-            <li class="header__li"><a href="#">価格</a></li>
+            <li class="header__li"><a href="#main">特徴</a></li>
+            <li class="header__li"><a href="#price">価格</a></li>
             <li class="header__li">
               <a class="js__contact" href="#contactbutton">お問い合わせ</a>
             </li>
           </ul>
-          <a class="btn js__contact" id="white" href="#contactbutton">お問い合わせ</a>
+          <a class="btn js__contact" id="white" href="#contactbutton"
+            >お問い合わせ</a
+          >
         </nav>
       </div>
     </header>
@@ -83,7 +88,9 @@
               デザインに注力されたい方の <br class="hero--br" />
               助けになります
             </p>
-            <a class="btn hero__btn" id="white" href="#contactbutton">お問い合わせ</a>
+            <a class="btn hero__btn" id="white" href="#contactbutton"
+              >お問い合わせ</a
+            >
           </div>
           <picture class="hero__picture">
             <source
@@ -94,7 +101,7 @@
           </picture>
         </div>
       </section>
-      <section class="main">
+      <section class="main" id="main">
         <div class="container">
           <h2 class="heading-2">ユアコーディング3つの特徴</h2>
           <p class="main__features">features</p>
@@ -166,7 +173,7 @@
           </div>
         </div>
       </section>
-      <section class="price">
+      <section class="price" id="price">
         <div class="container" data-aos="zoom-in" data-aos-duration="1000">
           <h2 class="heading-2">価格</h2>
           <p class="price__price">price</p>
@@ -283,85 +290,108 @@
         <h2 class="heading-2">制作実績</h2>
         <p class="works__works">works</p>
         <div class="swiper">
-          <div class="swiper-wrapper ">
-            <article class="swiper-slide card">
-              <picture class="card__picture">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture class="swiper-slide__picture">
                 <source
                   type="img/png"
                   srcset="img/works3.png 1x, img/works3@2x.png 2x"
                 />
-                <img class="card__img" src="img/works3.png" alt="works3" />
+                <img
+                  class="swiper-slide__img"
+                  src="img/works3.png"
+                  alt="works3"
+                />
               </picture>
-              <div class="card__letter">
-                <p class="card__title">
+              <div class="swiper-slide__letter">
+                <p class="swiper-slide__title">
                   株式会社サンプル様採用サイトのコーディングを行いました！
                 </p>
-                <div class="card__details">
-                  <p class="card__detail">採用技術:jQuery, Bootstrap4</p>
-                  <p class="card__detail">実装期間:2週間</p>
-                  <p class="card__detail">担当コーダー:石井</p>
+                <div class="swiper-slide__details">
+                  <p class="swiper-slide__detail">
+                    採用技術:jQuery, Bootstrap4
+                  </p>
+                  <p class="swiper-slide__detail">実装期間:2週間</p>
+                  <p class="swiper-slide__detail">担当コーダー:石井</p>
                 </div>
               </div>
-            </article>
-            <article class="swiper-slide card">
-              <picture class="card__picture">
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-slide__picture">
                 <source
                   type="img/png"
                   srcset="img/works1.png 1x, img/works1@2x.png 2x"
                 />
-                <img class="card__img" src="img/works1.png" alt="works1" />
+                <img
+                  class="swiper-slide__img"
+                  src="img/works1.png"
+                  alt="works1"
+                />
               </picture>
-              <div class="card__letter">
-                <p class="card__title">
-                  コーディングカンファレンスのイベントLPの制作を行いました!
+              <div class="swiper-slide__letter">
+                <p class="swiper-slide__title">
+                  株式会社サンプル様採用サイトのコーディングを行いました！
                 </p>
-                <div class="card__details">
-                  <p class="card__detail">採用技術:jQuery, WordPress</p>
-                  <p class="card__detail">実装期間:4週間</p>
-                  <p class="card__detail">担当コーダー:石井</p>
+                <div class="swiper-slide__details">
+                  <p class="swiper-slide__detail">
+                    採用技術:jQuery, Bootstrap4
+                  </p>
+                  <p class="swiper-slide__detail">実装期間:2週間</p>
+                  <p class="swiper-slide__detail">担当コーダー:石井</p>
                 </div>
               </div>
-            </article>
-            <article class="swiper-slide card">
-              <picture class="card__picture">
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-slide__picture">
                 <source
                   type="img/png"
                   srcset="img/works3.png 1x, img/works3@2x.png 2x"
                 />
-                <img class="card__img" src="img/works3.png" alt="works3" />
+                <img
+                  class="swiper-slide__img"
+                  src="img/works3.png"
+                  alt="works3"
+                />
               </picture>
-              <div class="card__letter">
-                <p class="card__title">
+              <div class="swiper-slide__letter">
+                <p class="swiper-slide__title">
                   株式会社サンプル様採用サイトのコーディングを行いました！
                 </p>
-                <div class="card__details">
-                  <p class="card__detail">採用技術:jQuery, Bootstrap4</p>
-                  <p class="card__detail">実装期間:2週間</p>
-                  <p class="card__detail">担当コーダー:石井</p>
+                <div class="swiper-slide__details">
+                  <p class="swiper-slide__detail">
+                    採用技術:jQuery, Bootstrap4
+                  </p>
+                  <p class="swiper-slide__detail">実装期間:2週間</p>
+                  <p class="swiper-slide__detail">担当コーダー:石井</p>
                 </div>
               </div>
-            </article>
-            <article class="swiper-slide card">
-              <picture class="card__picture">
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-slide__picture">
                 <source
                   type="img/png"
                   srcset="img/works2.png 1x, img/works2@2x.png 2x"
                 />
-                <img class="card__img" src="img/works2.png" alt="works2" />
+                <img
+                  class="swiper-slide__img"
+                  src="img/works2.png"
+                  alt="works2"
+                />
               </picture>
-              <div class="card__letter">
-                <p class="card__title">
+              <div class="swiper-slide__letter">
+                <p class="swiper-slide__title">
                   株式会社サンプル様採用サイトのコーディングを行いました！
                 </p>
-                <div class="card__details">
-                  <p class="card__detail">採用技術:jQuery, Bootstrap4</p>
-                  <p class="card__detail">実装期間:2週間</p>
-                  <p class="card__detail">担当コーダー:石井</p>
+                <div class="swiper-slide__details">
+                  <p class="swiper-slide__detail">
+                    採用技術:jQuery, Bootstrap4
+                  </p>
+                  <p class="swiper-slide__detail">実装期間:2週間</p>
+                  <p class="swiper-slide__detail">担当コーダー:石井</p>
                 </div>
               </div>
-            </article>
+            </div>
           </div>
-        </div>
         </div>
       </section>
       <div class="contact" id="contactbutton">
@@ -453,6 +483,5 @@
     <script>
       AOS.init();
     </script>
-
   </body>
 </html>
