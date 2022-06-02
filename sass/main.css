@@ -528,11 +528,6 @@ body {
   opacity: 1;
 }
 
-.close nav {
-  right: -500rem;
-  opacity: 0;
-}
-
 .hero {
   height: 76.8rem;
   background: url(../img/circle.svg) no-repeat;
@@ -1207,8 +1202,6 @@ body {
   text-align: center;
   margin-top: 1.5rem;
   z-index: 100;
-  -webkit-transform: translateY(1rem);
-          transform: translateY(1rem);
 }
 
 .hum::before {
