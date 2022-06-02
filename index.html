@@ -34,16 +34,18 @@
     <link rel="stylesheet" href="sass/main.css" />
   </head>
   <body>
-    <div id="navArea">
+    <div id="navArea" class="close">
       <button type="button" class="button">
         <span class="hum">&nbsp;</span>
       </button>
-      <div id="mask"></div>
+      <!-- <div id="mask"></div> -->
       <nav class="navArea">
         <ul>
-          <li><a href="#main">特徴</a></li>
-          <li><a href="#price">価格</a></li>
-          <li><a href="#contactbutton">お問い合わせ</a></li>
+          <li><a href="#main" class="buttonclose">特徴</a></li>
+          <li><a href="#price" class="buttonclose2">価格</a></li>
+          <li>
+            <a href="#contactbutton" class="buttonclose3">お問い合わせ</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -291,7 +293,7 @@
         <p class="works__works">works</p>
         <div class="swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <article class="swiper-slide">
               <picture class="swiper-slide__picture">
                 <source
                   type="img/png"
@@ -315,8 +317,8 @@
                   <p class="swiper-slide__detail">担当コーダー:石井</p>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
+            </article>
+            <article class="swiper-slide">
               <picture class="swiper-slide__picture">
                 <source
                   type="img/png"
@@ -330,18 +332,16 @@
               </picture>
               <div class="swiper-slide__letter">
                 <p class="swiper-slide__title">
-                  株式会社サンプル様採用サイトのコーディングを行いました！
+                  コーディングカンファレンスのイベントLPの制作を行いました!
                 </p>
                 <div class="swiper-slide__details">
-                  <p class="swiper-slide__detail">
-                    採用技術:jQuery, Bootstrap4
-                  </p>
-                  <p class="swiper-slide__detail">実装期間:2週間</p>
+                  <p class="swiper-slide__detail">採用技術:jQuery, WordPress</p>
+                  <p class="swiper-slide__detail">実装期間:4週間</p>
                   <p class="swiper-slide__detail">担当コーダー:石井</p>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
+            </article>
+            <article class="swiper-slide">
               <picture class="swiper-slide__picture">
                 <source
                   type="img/png"
@@ -365,8 +365,8 @@
                   <p class="swiper-slide__detail">担当コーダー:石井</p>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
+            </article>
+            <article class="swiper-slide">
               <picture class="swiper-slide__picture">
                 <source
                   type="img/png"
@@ -390,7 +390,7 @@
                   <p class="swiper-slide__detail">担当コーダー:石井</p>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>

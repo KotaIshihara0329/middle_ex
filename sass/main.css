@@ -528,6 +528,11 @@ body {
   opacity: 1;
 }
 
+.close nav {
+  right: -500rem;
+  opacity: 0;
+}
+
 .hero {
   height: 76.8rem;
   background: url(../img/circle.svg) no-repeat;
